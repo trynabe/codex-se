@@ -1,0 +1,10 @@
+@font-face{font-family:Anuphan;font-style:normal;font-weight:400;font-display:swap;src:url('fonts/anuphan-400.ttf') format('truetype')}
+@font-face{font-family:Anuphan;font-style:normal;font-weight:500;font-display:swap;src:url('fonts/anuphan-500.ttf') format('truetype')}
+@font-face{font-family:Anuphan;font-style:normal;font-weight:600;font-display:swap;src:url('fonts/anuphan-600.ttf') format('truetype')}
+@font-face{font-family:Anuphan;font-style:normal;font-weight:700;font-display:swap;src:url('fonts/anuphan-700.ttf') format('truetype')}
+:root{--font-ui:Anuphan,system-ui,sans-serif;font-family:var(--font-ui);font-weight:400;font-synthesis:none}
+body,button,input,select,textarea,code,pre,kbd,samp,.nav-icon,.svg-text{font-family:var(--font-ui)}
+button,input,select,textarea{font:inherit}
+body{line-height:1.85}h1{font-weight:700;letter-spacing:-.025em}h2,h3,h4{font-weight:600;line-height:1.5}.brand{font-weight:700}.eyebrow{font-weight:700}.chapter-head h2{letter-spacing:-.015em}
+strong,b{font-weight:700}
+@media print{body{font-family:var(--font-ui)}}
