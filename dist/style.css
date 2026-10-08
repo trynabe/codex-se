@@ -26,7 +26,7 @@
 @media print{
  @page{size:A4;margin:12mm 14mm}
  body:has(.lab-problem){background:white;color:#202020;line-height:1.45;font-size:11pt;color-scheme:light}
- body:has(.lab-problem) .sidebar,body:has(.lab-problem) .topbar,body:has(.lab-problem) .skip-link,body:has(.lab-problem) footer,body:has(.lab-problem) main>:not(.lab-problem){display:none!important}
+ body:has(.lab-problem) .sidebar,body:has(.lab-problem) .topbar,body:has(.lab-problem) .skip-link,body:has(.lab-problem) footer,body:has(.lab-problem) main>:not(.lab-problem):not(.lab-worksheets){display:none!important}
  body:has(.lab-problem) .app-shell{margin:0}
  body:has(.lab-problem) main{padding:0;margin:0;max-width:none;min-height:0}
  body:has(.lab-problem) .lab-problem{padding:0;border:0;border-radius:0;background:white;color:#202020;box-shadow:none}
@@ -38,4 +38,28 @@
  .lab-problem .lab-tasks{padding-top:2mm;margin-top:3mm;border-color:#aaa;break-inside:avoid}
  .lab-problem .lab-tasks h3{font-size:11pt;margin:0 0 1mm}.lab-problem .lab-tasks ol{padding-left:6mm;margin:0}
  .lab-problem .lab-tasks li{margin:1mm 0}.lab-problem .lab-tasks p{font-size:9pt;margin:1.5mm 0 0;color:#505050}
+}
+
+.lab-worksheets,.lab-question-footer{display:none}
+@media print{
+ body:has(.lab-problem) .lab-worksheets{display:block}
+ body:has(.lab-problem) .lab-problem{position:relative;min-height:272mm}
+ .lab-problem .lab-meta{border-bottom:.6pt solid #c7d2df;padding-bottom:3mm}
+ .lab-problem .lab-print-note{display:none}
+ .lab-sheet{height:272mm;position:relative;break-before:page;background:white;color:#1f2937;overflow:visible}
+ .lab-sheet-header{border-bottom:.6pt solid #c7d2df;padding-bottom:4mm;margin-bottom:5mm}
+ .lab-sheet-code{font-size:9pt;color:#4c6580;font-weight:600;margin-bottom:3mm}
+ .lab-sheet h2{font-size:18pt;line-height:1.35;margin:0 0 1.5mm;font-weight:700}
+ .lab-sheet-header p{font-size:11pt;line-height:1.4;color:#586779;margin:0}
+ .lab-sheet-footer,.lab-question-footer{position:absolute;bottom:1mm;left:0;right:0;border-top:.5pt solid #ccd6e0;padding-top:2mm;display:flex;justify-content:space-between;font-size:8.5pt;color:#66758a}
+ .lab-sheet-diagram{height:225mm;border:.6pt solid #c5d0dd;border-radius:2mm;overflow:hidden}
+ .lab-sheet-diagram svg{width:100%;height:100%;display:block}
+ .lab-sheet-narrative{width:100%;border-collapse:collapse;table-layout:fixed;font-size:11pt;line-height:1.4;margin:0}
+ .lab-sheet-narrative th,.lab-sheet-narrative td{border:.65pt solid #c5d0dd;vertical-align:top;padding:3mm;min-width:0;color:#1f2937}
+ .lab-sheet-narrative th{width:42mm;text-align:left;font-weight:600;background:#f3f6fa}
+ .lab-sheet-narrative th small{display:block;font-size:9pt;font-weight:400;color:#66758a;margin-top:1mm}
+ .lab-sheet-narrative td{background:white}
+ .lab-sheet-narrative tr:last-child td{border-bottom:.65pt solid #c5d0dd}
+ .lab-sheet-name{height:18mm}.lab-sheet-actor{height:16mm}.lab-sheet-goal{height:18mm}.lab-sheet-pre{height:20mm}
+ .lab-sheet-trigger{height:16mm}.lab-sheet-main{height:62mm}.lab-sheet-exception{height:42mm}.lab-sheet-post{height:22mm}
 }
