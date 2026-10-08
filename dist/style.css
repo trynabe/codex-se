@@ -63,3 +63,9 @@
  .lab-sheet-name{height:18mm}.lab-sheet-actor{height:16mm}.lab-sheet-goal{height:18mm}.lab-sheet-pre{height:20mm}
  .lab-sheet-trigger{height:16mm}.lab-sheet-main{height:62mm}.lab-sheet-exception{height:42mm}.lab-sheet-post{height:22mm}
 }
+
+.lab-picker{flex:1;min-width:0}.lab-picker h2{font-size:1rem;margin:0 0 10px}.lab-family-buttons{display:flex;flex-wrap:wrap;gap:8px}
+.lab-family-button{border:1px solid var(--field-line);border-radius:7px;padding:9px 14px;font-size:.875rem;line-height:1.5;background:var(--paper);color:var(--ink);font-weight:500}
+.lab-family-button:hover{background:var(--soft)}.lab-family-button.selected{background:var(--blue);border-color:var(--blue);color:var(--accent-ink);font-weight:600}
+.lab-controls #lab-generate{flex-shrink:0}
+@media(max-width:600px){.lab-family-buttons{display:grid;grid-template-columns:1fr 1fr}.lab-family-button{padding:10px;font-size:.875rem;min-height:52px}.lab-controls #lab-generate{margin:16px 0 12px}}
