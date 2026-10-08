@@ -21,3 +21,21 @@
 .lab-entry{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 24px;background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:0 0 22px}.lab-entry p{margin:4px 0 0;color:var(--muted);font-size:.875rem}.lab-entry .btn{flex-shrink:0}.lab-controls{display:flex;flex-wrap:wrap;align-items:end;gap:14px;margin-bottom:22px}.lab-controls label{margin-bottom:6px}.lab-controls p{flex-basis:100%;margin:0;color:var(--muted);font-size:.875rem}.lab-controls select{min-width:260px}.lab-problem-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}.lab-problem-heading .eyebrow{overflow-wrap:anywhere;letter-spacing:.04em}.lab-problem-heading button{flex-shrink:0}.lab-meta{color:var(--muted);font-size:.875rem}.lab-problem{scroll-margin-top:20px}.lab-problem h2{font-size:1.5rem}.lab-problem #lab-story{max-width:84ch}.lab-problem #lab-story p{line-height:1.95;margin:0 0 24px}.lab-tasks{border-top:1px solid var(--line);padding-top:24px;margin-top:28px}.lab-tasks ol{padding-left:24px}.lab-tasks li{margin:12px 0}.lab-tasks p{color:var(--muted);font-size:.875rem}.lab-answers{margin-top:24px}.lab-answer-content{min-width:0}.lab-answer-content .lesson-section{margin-top:24px}.lab-answers details{overflow-wrap:anywhere}.lab-answers td:first-child{min-width:140px}.lab-answers li,.lab-hint li{margin:8px 0}.lab-answers summary{line-height:1.6}
 @media(max-width:600px){.lab-entry{display:block;padding:18px}.lab-entry .btn{margin-top:14px}.lab-controls{display:block}.lab-controls select,.lab-controls .btn{width:100%;min-width:0}.lab-controls .btn{margin:12px 0}.lab-problem-heading{align-items:flex-start;flex-wrap:wrap}.lab-problem h2{font-size:1.25rem}.lab-answers{padding:20px 16px}.lab-answers details{padding:14px 12px}.lab-problem #lab-story p{line-height:1.9}}
 .quiz-level-guide{display:flex;flex-wrap:wrap;gap:10px 24px;padding:13px 16px;border:1px solid var(--line);border-radius:8px;background:var(--subtle);font-size:.875rem}.quiz-level-guide b{margin-left:6px}.quiz-guide-note{font-size:.875rem;color:var(--muted);margin:8px 0 24px}.question-tags{display:flex;align-items:center;flex-wrap:wrap;gap:8px}.question-tags .pill{white-space:normal}.difficulty-pill{font-size:.875rem;line-height:1.8;padding:2px 10px;border:1px solid var(--field-line);border-radius:5px;white-space:nowrap}.difficulty-pill[data-difficulty=medium]{border-style:dashed}.difficulty-pill[data-difficulty=hard]{font-weight:700;border-width:2px}.quiz-level-results{max-width:480px}.quiz-controls>div{min-width:0}.quiz-meta{flex-wrap:wrap;gap:6px 14px}
+
+.lab-problem-actions{display:flex;flex-wrap:wrap;gap:8px}.lab-problem #lab-story p{line-height:1.8;margin-bottom:16px}
+@media print{
+ @page{size:A4;margin:12mm 14mm}
+ body:has(.lab-problem){background:white;color:#202020;line-height:1.45;font-size:11pt;color-scheme:light}
+ body:has(.lab-problem) .sidebar,body:has(.lab-problem) .topbar,body:has(.lab-problem) .skip-link,body:has(.lab-problem) footer,body:has(.lab-problem) main>:not(.lab-problem){display:none!important}
+ body:has(.lab-problem) .app-shell{margin:0}
+ body:has(.lab-problem) main{padding:0;margin:0;max-width:none;min-height:0}
+ body:has(.lab-problem) .lab-problem{padding:0;border:0;border-radius:0;background:white;color:#202020;box-shadow:none}
+ .lab-problem .lab-problem-actions,.lab-problem .lab-hint,.lab-problem>.references{display:none!important}
+ .lab-problem .lab-problem-heading{margin:0 0 2mm}.lab-problem .eyebrow{color:#505050;font-size:9pt}
+ .lab-problem h2{font-size:18pt;margin:0 0 1.5mm;line-height:1.3}
+ .lab-problem .lab-meta{font-size:9pt;color:#505050;margin:0 0 3mm}
+ .lab-problem #lab-story{max-width:none}.lab-problem #lab-story p{font-size:11pt;line-height:1.45;margin:0 0 2.5mm}
+ .lab-problem .lab-tasks{padding-top:2mm;margin-top:3mm;border-color:#aaa;break-inside:avoid}
+ .lab-problem .lab-tasks h3{font-size:11pt;margin:0 0 1mm}.lab-problem .lab-tasks ol{padding-left:6mm;margin:0}
+ .lab-problem .lab-tasks li{margin:1mm 0}.lab-problem .lab-tasks p{font-size:9pt;margin:1.5mm 0 0;color:#505050}
+}
