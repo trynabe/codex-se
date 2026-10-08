@@ -2,6 +2,12 @@
 
 by trynabe
 
+## เว็บไซต์ออนไลน์
+
+[เปิด SE Study Room](https://trynabe.github.io/codex-se/)
+
+GitHub Actions เผยแพร่ไฟล์ใน `dist` ไป GitHub Pages อัตโนมัติเมื่อ push การเปลี่ยนเว็บขึ้น `main` และสามารถเริ่มเองจาก workflow “Deploy study website to GitHub Pages” ได้
+
 เว็บไซต์อ่านสอบ ITDS261 ภาษาไทยจากเอกสารเรียนในโฟลเดอร์นี้
 
 - บทเรียน 8 บทตามขอบเขต Midterm พร้อมบทเสริม
